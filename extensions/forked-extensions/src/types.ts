@@ -1,5 +1,7 @@
 export type ForkedExtension = {
+  /** The folder full path */
   folderPath: string;
+  /** The folder name */
   folderName: string;
   name: string;
   title: string;
@@ -18,3 +20,5 @@ export type ForkedExtension = {
 };
 
 export type ExtentionNameFolder = { name: string; folder: string };
+
+export type CommitDiff = { ahead: number; behind: number };
